@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Cadastro</h2>
+        <form id="cadastro-form" class="form-grid">
+            <div class="field">
+                <label for="nome">Nome completo*</label>
+                <input type="text" id="nome" required>
+            </div>
+            <div class="field">
+                <label for="email">E-mail*</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="field">
+                <label for="telefone">Telefone*</label>
+                <input type="tel" id="telefone" placeholder="digite o número do telefone" required>
+            </div>
+            <div class="field">
+                <label for="cpf">CPF*</label>
+                <input type="text" id="cpf" pattern="\d{11}" placeholder="00000000000" required>
+            </div>
+            <div class="field">
+                <label for="senha">Senha*</label>
+                <input type="password" id="senha" required>
+            </div>
+            <div class="field">
+                <label for="confirmar_senha">Confirmar senha*</label>
+                <input type="password" id="confirmar_senha" required>
+            </div>
+        </form>
+        <div class="action-buttons">
+            <button class="botao" id="login-button">Fazer login</button>
+            <button class="botao2" type="submit" form="cadastro-form">Cadastrar</button>
+        </div>
+    </div>
+    
+</body>
+</html>
